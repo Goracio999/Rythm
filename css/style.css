@@ -65,26 +65,50 @@ a {
     min-height: 152px;
 }
 /* .header__logo {}
-.header__menu {}
-.menu {} */
+.header__menu {} */
+.menu {
+    padding:10px 15px 10px 0px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+} 
 .menu__list {
     display: flex;
-    gap: 56px;
+    column-gap: 56px;
+    row-gap: 10px;
+    flex-wrap: wrap;
 }
-
 .menu__item {
     display: inline-block;
 }
-
 .menu__link {
     color: rgba(18, 18, 18, 0.4);
     font-weight: 500;
 }
-
 .menu__link:hover {
     text-decoration: underline;
 }
-
+@media (max-width: 1092px) {
+    .header__container {
+        gap: 50px;
+        min-height: 100px;
+    }
+    .menu__list { column-gap: 40px; }
+}
+@media (max-width: 762px) {
+    .header__container {
+        min-height: 65px;
+    }
+}
+@media (max-width: 480px) {
+    .header__container { gap: 20px; }
+    .menu { padding: 0; }
+    .menu__list { column-gap: 20px; }
+    .header__logo {
+        width: 40px;
+        flex: 0 0 28px;
+        overflow: hidden;
+    }
+}
 /* -----------------Main Page--------------------- */
 .main {
     padding-bottom: 80px;
@@ -95,6 +119,7 @@ a {
 .main__content {
     flex: 0 1 50%;
     align-self: flex-end;
+    padding-top: 120px;
     padding-bottom: 60px;
     padding-right: 20px;
 }
@@ -102,7 +127,7 @@ a {
     color: #121212;
     font-family: CalSans;
     font-size: 56px;
-    line-height: 67px;
+    line-height: 1.2;
     font-weight: 600;
 }
 .main__title span {
@@ -128,6 +153,7 @@ a {
      background-color: #FF6428;
      border-radius: 40px;
      color: #fff;
+     text-align: center;
      line-height: 28px;
      font-weight: 600;
  }
@@ -141,6 +167,8 @@ a {
     flex: 0 1 50%;
 }
 .main__image {
+    max-width: 672px;
+    display: inline-block;
     position: relative;
     margin-right: -135px;
 }
@@ -153,4 +181,22 @@ a {
     right: 36.6%;
     bottom: 0;
     transform: translate(0, 50%);
+}
+@media (max-width: 1092px) {
+    .main__image img { width: 100%; }
+    .main__content { flex: 0 0 60%;}
+    .main__decor { flex: 0 0 40% }
+}
+@media (max-width: 762px) {
+    .main__content { flex: 1 1 100%; }
+    .main__decor { display: none; }
+    .main__title { font-size: 44px;}
+}
+@media (max-width: 480px) {
+    .actions-main {flex-wrap: wrap;}
+    .actions-main__button {flex: 1 1 100%;}
+    .actions-main__button:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
 }
