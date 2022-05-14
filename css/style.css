@@ -1,3 +1,4 @@
+/* --------------- Common ---------------- */
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
 
 @font-face {
@@ -26,9 +27,9 @@ body {
     color: #666666
 }
 
-a {
-    text-decoration: none;
-}
+a { text-decoration: none; }
+li { list-style: none;}
+
 .wrapper {
     overflow: hidden;
     min-height: 100%;
@@ -46,8 +47,18 @@ a {
     margin: 0 auto;
     padding: 0px 15px;
 }
+.title {
+    font-family: CalSans;
+    color: #121212;
+    font-size: 44px;
+    line-height: 1.2;
+    text-align: center;
+}
+.title span {
+    color: #FF6428;
+}
 
-/* -------------------------------------- */
+/* -------------------Main Page------------------- */
 
 .header {
     position: absolute;
@@ -83,9 +94,11 @@ a {
 .menu__link {
     color: rgba(18, 18, 18, 0.4);
     font-weight: 500;
+    transition: all 0.3s ease 0s;
 }
 .menu__link:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
 }
 @media (max-width: 1092px) {
     .header__container {
@@ -115,6 +128,7 @@ a {
 }
 .main__container{
     display: flex;
+    margin-bottom: 80px;
 }
 .main__content {
     flex: 0 1 50%;
@@ -156,9 +170,13 @@ a {
      text-align: center;
      line-height: 28px;
      font-weight: 600;
+     transition: all 0.3s ease 0s;
  }
 .actions-main__button:not(:last-child) {
     margin-right: 40px;
+}
+.actions-main__button:hover {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
 }
 .actions-main__icon:not(:last-child) {
     margin-right: 27px;
@@ -193,10 +211,86 @@ a {
     .main__title { font-size: 44px;}
 }
 @media (max-width: 480px) {
-    .actions-main {flex-wrap: wrap;}
+    .actions-main { 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .actions-main__button {flex: 1 1 100%;}
     .actions-main__button:not(:last-child) {
         margin-right: 0px;
         margin-bottom: 15px;
     }
 }
+/* ---------------- Store -------------------------- */
+.page__store { 
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.store {}
+
+.store__container {}
+
+.store__title {
+    margin-bottom: 86px;
+}
+
+.store__body {}
+
+.body-store_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+.body-store__title {
+    letter-spacing: 0.08em;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #121212;
+    font-weight: 600;
+}
+.body-store__all {
+    color: #868686;
+    font-size: 20px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+.body-store__all:hover { 
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35); 
+    transition: all 0.3s ease 0s;
+}
+
+.body-store__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 54px;
+}
+
+.item {
+    display: grid;
+}
+
+.item__image {}
+.item__image:not(:last-child) {
+    margin-bottom: 40px;
+}
+.item__title {
+    color: #121212;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    justify-self: start;
+    margin-bottom: 7px;
+}
+.item__title:hover {
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease 0s;
+}
+.item__price {}
+/* ---------------- Categories --------------------- */
+/* ---------------- Brands ------------------------- */
+/* ---------------- Why Try ------------------------ */
+/* ---------------- Footer Contacts ---------------- */
