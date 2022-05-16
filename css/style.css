@@ -237,8 +237,9 @@ li { list-style: none;}
 
 .store__body {}
 
-.body-store_header {
+.body-store__header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
@@ -274,7 +275,9 @@ li { list-style: none;}
 .item {
     display: grid;
 }
-
+.item__image {
+    text-align: center;
+}
 .item__image img{
     max-width: 100%;
 }
@@ -296,6 +299,35 @@ li { list-style: none;}
 .item__price {
     font-size: 14px;
     line-height: 21px;
+}
+/* ------------- Adaptation --------------- */
+@media (max-width: 1092px) {
+    .store {
+            padding-top: 50px;
+            padding-bottom: 50px;
+    }    
+    .store__title {
+            margin-bottom: 50px;
+    }
+    .body-store__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 762px) {
+    .store {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }        
+    .store__title { margin-bottom: 20px; }
+    .item__image:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .body-store__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 /* ---------------- Categories --------------------- */
 /* ---------------- Brands ------------------------- */
