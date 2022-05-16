@@ -222,12 +222,12 @@ li { list-style: none;}
     }
 }
 /* ---------------- Store -------------------------- */
-.page__store { 
+.page__store {}
+
+.store {
     padding-top: 80px;
     padding-bottom: 90px;
 }
-
-.store {}
 
 .store__container {}
 
@@ -330,6 +330,55 @@ li { list-style: none;}
     }
 }
 /* ---------------- Categories --------------------- */
+
+.categories {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+.categories__title {
+    margin-bottom: 80px;
+}
+.categories__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
+    row-gap: 35px;
+}
+/* .item-category:hover {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease 0s;
+} */
+.item-category {
+    position: relative;
+}
+.item-category__title {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    z-index: 2;
+}
+.item-category__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    padding-bottom: 127%;
+}
+.item-category__image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
 /* ---------------- Brands ------------------------- */
 /* ---------------- Why Try ------------------------ */
 /* ---------------- Footer Contacts ---------------- */
