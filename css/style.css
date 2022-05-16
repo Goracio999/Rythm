@@ -251,6 +251,7 @@ li { list-style: none;}
     text-transform: uppercase;
     color: #121212;
     font-weight: 600;
+    margin-bottom: 32px;
 }
 .body-store__all {
     color: #868686;
@@ -267,13 +268,16 @@ li { list-style: none;}
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 54px;
+    margin-bottom: 96px;
 }
 
 .item {
     display: grid;
 }
 
-.item__image {}
+.item__image img{
+    max-width: 100%;
+}
 .item__image:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -289,7 +293,10 @@ li { list-style: none;}
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
     transition: all 0.3s ease 0s;
 }
-.item__price {}
+.item__price {
+    font-size: 14px;
+    line-height: 21px;
+}
 /* ---------------- Categories --------------------- */
 /* ---------------- Brands ------------------------- */
 /* ---------------- Why Try ------------------------ */
