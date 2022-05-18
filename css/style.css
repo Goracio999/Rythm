@@ -437,5 +437,34 @@ li { list-style: none;}
 .brands__item:hover {
     transform: scale(1.1);
 }
+/* ------------- Adaptation --------------- */
+@media (max-width: 1092px) {
+    .brands {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .brands__title {
+        margin-bottom: 50px;
+    }
+
+    .brands__items {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 762px) {
+    .brands__items {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 /* ---------------- Why Try ------------------------ */
 /* ---------------- Footer Contacts ---------------- */
