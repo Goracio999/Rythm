@@ -390,6 +390,11 @@ li { list-style: none;}
 }
 /* ------------- Adaptation --------------- */
 @media (max-width: 1092px) {
+    .categories {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .categories__title { margin-bottom: 50px; }
     .categories__items {
             grid-template-columns: repeat(3, 1fr);
             column-gap: 40px;
