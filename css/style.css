@@ -414,6 +414,10 @@ li { list-style: none;}
     }
 }
 /* ---------------- Brands ------------------------- */
+.brands {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
 .brands__title {
     margin-bottom: 80px;
 }
@@ -467,4 +471,49 @@ li { list-style: none;}
     }
 }
 /* ---------------- Why Try ------------------------ */
+.why {
+    background-color: #121212;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.why__title {
+    color: #fff;
+    margin-bottom: 50px;
+}
+.why__items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    gap: 30px;
+}
+.item-why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* row-gap: 30px; */
+    padding: 40px;
+}
+.item-why__icon {
+    width: 72px;
+    height: 72px;
+    background-color: #262626;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-why__title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.item-why__text {
+    text-align: center;
+}
 /* ---------------- Footer Contacts ---------------- */
