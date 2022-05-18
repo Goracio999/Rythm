@@ -414,5 +414,28 @@ li { list-style: none;}
     }
 }
 /* ---------------- Brands ------------------------- */
+.brands__title {
+    margin-bottom: 80px;
+}
+.brands__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+    row-gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.brands__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+}
+.brands__item img {
+    transition: all 0.3s ease 0s;
+}
+.brands__item:hover {
+    transform: scale(1.1);
+}
 /* ---------------- Why Try ------------------------ */
 /* ---------------- Footer Contacts ---------------- */
