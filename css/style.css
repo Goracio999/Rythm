@@ -474,7 +474,7 @@ li { list-style: none;}
 .why {
     background-color: #121212;
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 54px;
 }
 .why__title {
     color: #fff;
@@ -516,4 +516,38 @@ li { list-style: none;}
 .item-why__text {
     text-align: center;
 }
+/* ------------- Adaptation --------------- */
+@media (max-width: 1092px) {
+    .why {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .item-why__title {
+        margin-bottom: 30px;
+    }
+
+    .item-why {
+        /* grid-template-columns: repeat(3, 1fr); */
+        padding: 30px;
+    }
+}
+
+@media (max-width: 762px) {
+    .why {
+            padding-top: 40px;
+            padding-bottom: 20px;
+    }
+    .item-why__title { margin-bottom: 20px; }
+    .why__items { grid-template-columns: repeat(2, 1fr) }
+    .item-why__title { margin-bottom: 30px; }
+    .item-why { padding: 30px; }
+}
+
+@media (max-width: 480px) {
+    .why__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* ---------------- User Review -------------------- */
 /* ---------------- Footer Contacts ---------------- */
