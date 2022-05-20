@@ -57,7 +57,10 @@ li { list-style: none;}
 .title span {
     color: #FF6428;
 }
-
+.swiper {
+    width: 100%;
+    height: auto;
+}
 /* -------------------Main Page------------------- */
 
 .header {
@@ -226,7 +229,7 @@ li { list-style: none;}
 
 .store {
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 20px;
 }
 
 .store__container {}
@@ -304,20 +307,21 @@ li { list-style: none;}
 @media (max-width: 1092px) {
     .store {
             padding-top: 50px;
-            padding-bottom: 50px;
+            padding-bottom: 10px;
     }    
     .store__title {
             margin-bottom: 50px;
     }
     .body-store__items {
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 80px;
     }
 }
 
 @media (max-width: 762px) {
     .store {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }        
     .store__title { margin-bottom: 20px; }
     .item__image:not(:last-child) {
@@ -327,12 +331,13 @@ li { list-style: none;}
 @media (max-width: 480px) {
     .body-store__items {
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 60px;
     }
 }
 /* ---------------- Categories --------------------- */
 
 .categories {
-    padding-top: 90px;
+    padding-top: 64px;
     padding-bottom: 110px;
 }
 .categories__title {
@@ -550,4 +555,65 @@ li { list-style: none;}
     }
 }
 /* ---------------- User Review -------------------- */
+.reviews {
+    padding-top: 240px;
+    padding-bottom: 90px;
+}
+.reviews__title {
+    margin-bottom: 80px;
+}
+.swiper-wrapper__slide {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    
+}
+.slide-swiper-reviews__image{
+    flex: 0 1 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-swiper-reviews__image img {
+    /* display: none; */
+    position: relative;
+    left: 160px;
+    z-index: 2;
+    border-radius: 50%;
+}
+.reviews-image__background {
+    width: 284px;
+    height: 260px;
+    background-color: #FF6428;
+    border-radius: 40px 0px 400px 400px;
+    transform: rotate(-7.72deg);
+    position: relative;
+    left: -240px;
+    bottom: -12px;
+    z-index: 1;
+}
+.slide-swiper-reviews__boby {
+    flex: 0 1 50%;
+}
+.slide-swiper-reviews__text {
+    font-size: 24px;
+    line-height: 1.6;
+}
+.slide-swiper-reviews__text:not(:last-child) {
+    margin-bottom: 56px;
+}
+.slide-swiper-reviews__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.slide-swiper-reviews__position {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    color: #868686;
+    text-transform: uppercase;
+}
 /* ---------------- Footer Contacts ---------------- */
