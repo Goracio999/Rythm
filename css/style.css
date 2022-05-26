@@ -670,12 +670,12 @@ li { list-style: none;}
         margin-bottom: 50px;
     }
     .swiper-wrapper__slide { }
-    .slide-swiper-reviews__image {
-        flex: 1 2 40%;
-        transform: scale(0.8);  
+    .slide-swiper-reviews__picture {
+        /* flex: 0 0 40%; */
+        transform: scale(0.7);  
     }
     .slide-swiper-reviews__body {
-        flex: 1 1 60%;
+        /* flex: 0 1 60%; */
     }
 }
 
@@ -690,11 +690,17 @@ li { list-style: none;}
     .swiper-wrapper__slide {
         flex-direction: column;
     }
+    .swiper-rewievs__pagination {
+        transform: translate(0px, 200%); 
+    }
 }
 
 @media (max-width: 480px) {
-    .slide-swiper-reviews__image {
-        transform: scale(0.6);
+    .slide-swiper-reviews__picture {
+        transform: scale(0.5);
+    }
+    .slide-swiper-reviews__position {
+        padding-bottom: 32px;
     }
 }
 /* ---------------- Footer Contacts ---------------- */
