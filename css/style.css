@@ -255,7 +255,6 @@ li { list-style: none;}
     text-transform: uppercase;
     color: #121212;
     font-weight: 600;
-    margin-bottom: 32px;
 }
 .body-store__all {
     color: #868686;
@@ -736,7 +735,7 @@ li { list-style: none;}
     display: flex;
     gap: 26px;
 }
-.promoapp__icon img{
+.promoapp__icon {
     transition: all 0.3s ease 0s;
 }
 .promoapp__icon:hover {
@@ -851,10 +850,6 @@ li { list-style: none;}
     /* margin-bottom: 30px; */
 }
 
-.menu-footer__item:not(:last-child) {
-    
-}
-
 .menu-footer__link, .footer-contacts__link {
     text-decoration: none;
     font-size: 16px;
@@ -889,14 +884,9 @@ li { list-style: none;}
         padding-right: 10px;
     }
 }
-
 @media (max-width: 762px) {
     .footer__body {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-}
-
-@media (max-width: 480px) {
- 
 }
